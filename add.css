@@ -1,0 +1,142 @@
+body {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(181, 103, 103);
+  height: 90px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+header .ttl {
+  font-size: 60px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+header .link {
+  padding-right: 40px;
+  padding-top: 30px;
+}
+
+header .link a {
+  color: whitesmoke;
+  padding-right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header .link a:hover {
+  text-decoration: underline;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+#main #left {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 85vh;
+  background-color: rgb(237, 235, 235);
+  margin: 10px;
+  font-size: 200px;
+  margin-right: 0px;
+  position: relative;
+  padding-left: 100px;
+}
+
+#main #left .num1 {
+  margin: 40px;
+  color: rgb(181, 103, 103);
+  font-weight: bold;
+}
+
+#main #left .sign {
+  color: rgb(79, 145, 238);
+  margin: 40px;
+  font-weight: bold;
+}
+
+#main #left .num2 {
+  color: rgb(240, 203, 92);
+  margin: 40px;
+  font-weight: bold;
+}
+
+#main #left .eql {
+  color: rgb(181, 103, 103);
+  margin: 40px;
+  font-weight: bold;
+}
+
+#main #left .quesMark {
+  color: #595757;
+  margin: 40px;
+  font-weight: bold;
+}
+
+#main #right {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#main #right .op1 {
+  background-color: rgb(181, 103, 103);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: whitesmoke;
+  margin: 10px;
+  font-size: 200px;
+}
+
+#main #right .op1:active,
+#main #right .op2:active,
+#main #right .op3:active {
+  box-shadow: 0px 4px 8px 8px gray;
+}
+
+#main #right .op2 {
+  background-color: rgb(79, 145, 238);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: whitesmoke;
+  margin: 10px;
+  font-size: 200px;
+}
+
+#main #right .op3 {
+  background-color: rgb(240, 203, 92);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: whitesmoke;
+  margin: 10px;
+  font-size: 200px;
+}
+
+#main #left .wrong {
+  position: absolute;
+  right: 120px;
+  font-size: 300px;
+  color: rgb(152, 3, 3);
+  display: none;
+}
+
+#main #left .right {
+  position: absolute;
+  right: 80px;
+  font-size: 250px;
+  color: rgb(3, 99, 22);
+  display: none;
+}
